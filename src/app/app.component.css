@@ -1,0 +1,34 @@
+.nav-container {
+    background-color: #d9d9d9; /* Cor de fundo da navbar */
+    color: #284b63; /* Cor do texto */
+    padding: 1rem; /* Espaçamento interno */
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    margin-bottom: 100px;
+}
+
+.nav-container ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Coloca os itens da lista lado a lado */
+    gap: 1rem; /* Espaçamento entre os itens */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove paddings padrão */
+}
+
+.nav-container li {
+    margin: 0; /* Remove margens padrão */
+}
+
+.nav-container a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #284b63; /* Cor do texto dos links */
+    font-weight: 500; /* Deixa o texto um pouco mais grosso */
+    padding: 0.5rem 1rem; /* Adiciona espaçamento interno aos links */
+    
+}
+
+.items-container{
+    margin-top: 10px auto;
+}

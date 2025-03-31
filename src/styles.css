@@ -1,4 +1,41 @@
+/* Reset básico para HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total do elemento */
+}
+
+html, body {
+    height: 100%; /* Garante que o body ocupe toda a altura da janela */
+}
+
 body {
-    background-color: #284b63;
-    color: #d9d9d9;
-}/* You can add global styles to this file, and also import other style files */
+    background-color: #284b63; /* Cor de fundo */
+    color: #d9d9d9; /* Cor do texto */
+    font-family: 'Roboto', sans-serif; /* Fonte padrão */
+    line-height: 1.6; /* Define um espaçamento de linha consistente */
+}
+
+img, picture, video, canvas {
+    max-width: 100%; /* Garante que mídias não ultrapassem a largura do contêiner */
+    display: block;
+}
+
+button, input, textarea, select {
+    font: inherit; /* Garante que fontes sejam herdadas do body */
+}
+
+a {
+    text-decoration: none; /* Remove sublinhado de links */
+    color: inherit; /* Faz os links herdarem a cor do texto */
+}
+
+ul, ol {
+    list-style: none; /* Remove marcadores de listas */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0; /* Remove margens padrão */
+}
+
+/* You can add global styles to this file, and also import other style files */

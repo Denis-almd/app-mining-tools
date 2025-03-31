@@ -1,3 +1,14 @@
 <router-outlet />
 
-<app-time-calculator></app-time-calculator>
+<nav class="nav-container">
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/time-calculator">Sugestões</a></li>
+        <li><a routerLink="/tac-validator">Sobre</a></li>
+    </ul>
+</nav>
+
+<div class="items-container">
+    <app-time-calculator></app-time-calculator>
+    <app-tac-validator></app-tac-validator> 
+</div>
