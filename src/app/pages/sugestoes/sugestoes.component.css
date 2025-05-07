@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+    gap: 1rem; /* Espaçamento entre os itens */
+    max-width: 500px; /* Limita a largura máxima do componente */
+    margin: 0 auto; /* Centraliza o componente horizontalmente */
+    padding: 1rem; /* Adiciona espaçamento interno */
+    
+}

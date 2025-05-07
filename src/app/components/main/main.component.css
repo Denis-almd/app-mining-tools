@@ -1,0 +1,8 @@
+footer {
+    text-align: center; /* Centraliza o texto no footer */
+    padding: 1rem; /* Espaçamento interno */
+    width: 100%; /* Faz o footer ocupar toda a largura */
+    position: fixed; /* Fixa o footer na parte inferior */
+    bottom: 0; /* Posiciona o footer no final da página */
+    border-top: 0.5px solid #ddd; /* Linha superior discreta */
+}

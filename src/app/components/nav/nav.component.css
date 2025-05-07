@@ -6,7 +6,7 @@
     justify-content: center; /* Centraliza os itens horizontalmente */
     align-items: center; /* Centraliza os itens verticalmente */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
-    margin-bottom: 100px;
+    font-size: 25px; /* Tamanho da fonte */
 }
 
 .nav-container ul {
@@ -26,7 +26,6 @@
     color: #284b63; /* Cor do texto dos links */
     font-weight: 500; /* Deixa o texto um pouco mais grosso */
     padding: 0.5rem 1rem; /* Adiciona espaçamento interno aos links */
-    
 }
 
 .items-container{

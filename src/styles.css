@@ -34,8 +34,15 @@ ul, ol {
     list-style: none; /* Remove marcadores de listas */
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h2, h3, h4, h5, h6, p {
     margin: 0; /* Remove margens padrão */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 1rem; /* Espaçamento abaixo do título */
+    color: #d9d9d9; /* Cor do texto do título */
 }
 
 /* You can add global styles to this file, and also import other style files */

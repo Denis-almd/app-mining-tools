@@ -12,8 +12,10 @@
     align-items: center;
 }
 
-.file-contaniner {
+.file-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
+    width: 100%;
 }
+
