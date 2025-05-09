@@ -1,1 +1,15 @@
-<p>json-formatter works!</p>
+<div class="json-formatter-container">
+    <h1>JSON Formatter</h1>
+    <textarea
+        [(ngModel)]="jsonInput"
+        placeholder="Insira o JSON aqui"
+        rows="10"
+        cols="50"
+    ></textarea>
+    <div class="buttons-container">
+        <button (click)="formatJson()">Formatar e Copiar JSON</button>
+        <button (click)="clearJson()">Limpar</button>
+    </div>
+    <pre *ngIf="formattedJson">{{ formattedJson }}</pre>
+    <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+</div>

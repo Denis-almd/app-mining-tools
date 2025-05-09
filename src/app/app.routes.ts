@@ -4,6 +4,7 @@ import { SugestoesComponent } from './pages/sugestoes/sugestoes.component';
 import { AboutComponent } from './pages/about/about.component';
 import { MainComponent } from './components/main/main.component';
 import { TimeCalculatorPageComponent } from './pages/time-calculator-page/time-calculator-page.component';
+import { JsonFormatterPageComponent } from './pages/json-formatter-page/json-formatter-page.component';
 
 export const routes: Routes = [
   {
@@ -15,6 +16,7 @@ export const routes: Routes = [
       { path: 'sugestoes', component: SugestoesComponent },
       { path: 'about', component: AboutComponent },
       { path: 'time-calculator', component: TimeCalculatorPageComponent },
+      { path: 'json-formatter', component: JsonFormatterPageComponent }
     ],
   },
   { path: '**', redirectTo: 'home' }, // Redireciona rotas inválidas
