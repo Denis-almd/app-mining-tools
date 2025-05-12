@@ -8,6 +8,7 @@ import { AppFooterComponent } from '../app-footer/app-footer.component';
   selector: 'app-main',
   imports: [RouterOutlet, AppHeaderComponent, AppFooterComponent],
   templateUrl: './main.component.html',
+  styleUrls: ['./main.component.css']
 })
 export class MainComponent {
 

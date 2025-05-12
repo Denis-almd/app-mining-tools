@@ -133,6 +133,7 @@ body {
   cursor: pointer;
   transition: var(--transition);
   font-weight: 500;
+  margin-top: 0,5rem;
 }
 
 .btn:hover {

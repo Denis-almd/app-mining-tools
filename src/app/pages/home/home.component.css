@@ -1,3 +1,7 @@
 .tool-card {
   cursor: pointer;
 }
+
+p {
+  min-height: 5rem;
+}
