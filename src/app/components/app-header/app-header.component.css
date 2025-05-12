@@ -18,6 +18,11 @@ header {
   font-weight: 600;
 }
 
+h1 a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit; /* Usa a cor do texto do h1 */
+}
+
 nav ul {
   display: flex;
   list-style: none;
