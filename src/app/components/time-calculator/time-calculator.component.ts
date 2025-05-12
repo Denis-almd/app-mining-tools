@@ -86,6 +86,10 @@ export class TimeCalculatorComponent {
     this.errorMessage = '';
   }
 
+  copyResult() {
+    this.copyToClipboard(this.result);
+  }
+
   copyToClipboard(text: string) {
     navigator.clipboard.writeText(text).then(() => {
 

@@ -10,14 +10,15 @@
             [(ngModel)]="inputTime"
             (input)="onInputChange($event)" 
             placeholder="HH:MM:SS ou Segundos" />
-            <div class="button-group">                    
-                <button class="btn" (click)="calcular()">Copiar</button>
-                <button class=" btn btn-secondary" (click)="limpar()">Limpar</button>
-            </div> 
             <div class="tool-output">
                 {{ result }}
                 {{ errorMessage }}
             </div>
+            <div class="button-group">                    
+                <button *ngIf="result" class="btn" (click)="copyResult()">Copiar</button>
+                <button *ngIf="result" class=" btn btn-secondary" (click)="limpar()">Limpar</button>
+            </div> 
+            
         </div>
     </div>
 </div> 
