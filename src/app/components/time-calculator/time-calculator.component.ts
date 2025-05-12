@@ -59,7 +59,7 @@ export class TimeCalculatorComponent {
     const inputedTimeSeconds = Number(timeParts[2]) || 0;
 
     const totalSeconds = (inputedTimeHours * 3600) + (inputedTimeMinutes * 60) + inputedTimeSeconds;
-    this.copyToClipboard(totalSeconds.toString());
+    //this.copyToClipboard(totalSeconds.toString());
     this.result = totalSeconds.toString() + ' Segundos';
   }
 
@@ -73,7 +73,7 @@ export class TimeCalculatorComponent {
 
     this.result = formattedTime;
 
-    this.copyToClipboard(formattedTime);
+    //this.copyToClipboard(formattedTime);
   }
 
   private pad(num: number): string {

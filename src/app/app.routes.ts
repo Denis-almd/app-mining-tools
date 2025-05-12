@@ -19,5 +19,5 @@ export const routes: Routes = [
       { path: 'json-formatter', component: JsonFormatterPageComponent }
     ],
   },
-  { path: '**', redirectTo: 'home' }, // Redireciona rotas inválidas
+  { path: '**', redirectTo: '' }, // Redireciona rotas inválidas
 ];

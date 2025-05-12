@@ -1,18 +1,23 @@
-<div class="tc-container">
-    <h1 class="tc-title">Conversor de Tempo</h1>
-    <div class="tc-input-group">
-        <label for="inputTime">Tempo (Formato HH:MM:SS ou em Segundos):</label>
-        <input 
-        type="text" 
-        id="inputTime" 
-        [(ngModel)]="inputTime"
-        (input)="onInputChange($event)" 
-        placeholder="HH:MM:SS ou Segundos" />
+<div class="tool-page">
+    <h2>Conversor de Tempo</h2>
+    <p class="tool-description">Converta o tempo em segundos para HH:MM:SS ou HH:MM:SS para segundos</p>
+    <div class="tool-card time-tool">
+         <div class="tool-content">
+            <input
+            class="tool-input"             
+            type="text" 
+            id="inputTime" 
+            [(ngModel)]="inputTime"
+            (input)="onInputChange($event)" 
+            placeholder="HH:MM:SS ou Segundos" />
+            <div class="button-group">                    
+                <button class="btn" (click)="calcular()">Copiar</button>
+                <button class=" btn btn-secondary" (click)="limpar()">Limpar</button>
+            </div> 
+            <div class="tool-output">
+                {{ result }}
+                {{ errorMessage }}
+            </div>
+        </div>
     </div>
-    <div class="tc-buttons">
-        <button (click)="calcular()">Copiar</button>
-        <button (click)="limpar()">Limpar</button>
-    </div>    
-    <p *ngIf="result">Conversão: {{ result }}</p>
-    <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
 </div> 
