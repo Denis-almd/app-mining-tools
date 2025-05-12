@@ -18,8 +18,7 @@ export class JsonFormatterComponent {
       this.errorMessage = null;
 
       if (!this.jsonInput) {
-        this.formattedJson = null;
-        this.errorMessage = 'Nenhum JSON para formatar.';
+        this.formattedJson =  this.formattedJson = 'JSON inválido. Por favor, corrija e tente novamente.';
         return;
       }
       
@@ -41,8 +40,7 @@ export class JsonFormatterComponent {
       this.formattedJson = JSON.stringify(parsedJson, null, 2);
       this.copyToClipboard();
     } catch (error) {
-      this.formattedJson = null;
-      this.errorMessage = 'JSON inválido. Por favor, corrija e tente novamente.';
+      this.formattedJson = 'JSON inválido. Por favor, corrija e tente novamente.';
     }
   }
     
@@ -54,7 +52,7 @@ export class JsonFormatterComponent {
         console.error('Erro ao copiar o JSON: ', err);
       });
     } else {
-      alert('Nenhum JSON formatado para copiar.');
+      
     }
   }
 

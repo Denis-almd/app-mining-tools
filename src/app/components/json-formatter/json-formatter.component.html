@@ -6,7 +6,7 @@
             <textarea class="tool-input" [(ngModel)]="jsonInput" rows="5" placeholder="Cole seu JSON aqui..."></textarea>    
             <div class="button-group">
                 <button class="btn" (click)="formatJson()">Formatar e Copiar JSON</button>
-                <button class="btn btn-secondary" (click)="clearJson()">Limpar</button>
+                <button *ngIf="formattedJson" class="btn btn-secondary" (click)="clearJson()">Limpar</button>
             </div>
             <pre class="tool-output">{{ formattedJson }}</pre>
         </div>
